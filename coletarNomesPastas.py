@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from datetime import datetime
-
+#ele precisa coletar, fazer a tabela, ai eu preciso fazer um código q una as outras tabelas de id e cpf, dps quando unir, lançar aqui e fazr relação id cpf.
 # --- Caminhos ---
 funcSet = r"C:\Users\melissa.lemes\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\Área de Trabalho\setembro"
 caminhoExcel = r"C:\Users\melissa.lemes\OneDrive - HITSS DO BRASIL SERVIÇOS TECNOLOGICOS LTDA\Área de Trabalho\umasopasta\coletarNomesPastas.xlsx"
@@ -68,3 +68,4 @@ df_final = df_final.merge(df_ref, on="CD_VAGA", how="left")
 # --- 6. Salva ---
 df_final.to_excel(caminhoExcel, index=False)
 print("✅ Planilha atualizada com sucesso!")
+
